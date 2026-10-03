@@ -1,0 +1,12 @@
+.loginPage {
+  display: flex;
+}
+.sidePannle {
+  background-color: #111827;
+  width: 40%;
+  height: 100vh;
+  color: white;
+}
+.devDeskHeader {
+  font-size: 24px;
+}
