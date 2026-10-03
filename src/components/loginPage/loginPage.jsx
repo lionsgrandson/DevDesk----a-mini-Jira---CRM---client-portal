@@ -1,5 +1,6 @@
 import './loginPage.css'
-function loginPage() {
+import { Link } from 'react-router-dom'
+function LoginPage() {
   return (
     <section className='loginPage'>
       <section className='sidePannle'>
@@ -24,27 +25,43 @@ function loginPage() {
       </section>
 
       <section className='mainPannle'>
-        <div>
-          <h2>Welcome Back</h2>
-          <p>Sign in to continue to your DevDesk workspace.</p>
-          <form>
-            <label>Email Address</label>
-            <input typeof='email' placeholder='moshe@devdesk.io' />
-            <label>Password</label>
-            <input type='password' placeholder='***********' />
+        <div className='subPannle'>
+          <div>
+            <h2 className='welBacTxt'>Welcome Back</h2>
+            <p className='signInText'>
+              Sign in to continue to your DevDesk workspace.
+            </p>
+          </div>
+          <form className='signInForm'>
+            <label htmlFor='email'>Email Address</label>
+            <input typeof='email' id='email' placeholder='moshe@devdesk.io' />
+            <label htmlFor='password'>Password</label>
+            <input type='password' id='password' placeholder='***********' />
+            <div className='forgotOrRemember'>
+              <div>
+                <input type='checkbox' id='checkbox' className='checkboxBTN' />
+                <label htmlFor='checkbox' className='checkboxTxt'>
+                  &nbsp;Remember me
+                </label>
+              </div>
+              <Link to='/dashboard'>Forgot Password?</Link>
+            </div>
+            <Link to='/dashboard'>
+              <button type='submit' className='signInBtn'>
+                Sign In
+              </button>
+            </Link>
+            <div className='createAccountDivSignInPage'>
+              <Link to='/dashboard'>New to DevDesk?</Link> &nbsp;&nbsp;&nbsp;
+              <Link to='/dashboard'>Create account</Link>
+            </div>
           </form>
-          <div>
-            <input type='checkbox' /> <label>Remember me </label>
-            <a href='#'>Forgot Password?</a>
-          </div>
-          <button type='submit'>Sign In</button>
-          <div>
-            <a href='#'>New to DevDesk</a> <a href='#'>Create account</a>
-          </div>
+          <p className='footerTextQestionMark'>
+            Secure workspace • Privacy-first • Built for agencies
+          </p>
         </div>
-        <p>Secure workspace • Privacy-first • Built for agencies</p>
       </section>
     </section>
   )
 }
-export default loginPage
+export default LoginPage

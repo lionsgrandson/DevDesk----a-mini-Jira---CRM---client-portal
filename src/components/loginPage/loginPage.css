@@ -4,7 +4,7 @@
 /* LEFT SIDE PANNLE */
 .sidePannle {
   background-color: #111827;
-  width: 35%;
+  width: 40%;
   height: 100vh;
   color: white;
 }
@@ -41,3 +41,71 @@
   margin-top: 2rem;
 }
 /* END OF --> LEFT SIDE PANNLE */
+/* ********************************************** */
+/* Sign In Pannle */
+.mainPannle {
+  background-color: #f5f7fb;
+  width: 65%;
+}
+.subPannle {
+  padding: 5rem 25rem;
+  width: 60rem;
+  height: calc(100vh - 10rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  justify-content: space-around;
+}
+.welBacTxt {
+  font-size: 3.45rem;
+}
+.signInText label .checkboxTxt {
+  font-size: 1.28rem;
+}
+
+input {
+  font-size: 1.5rem;
+  border: none;
+  box-shadow: 1px 1px #dfe4ec;
+  width: 60rem;
+  height: 4rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.checkboxBTN {
+  width: auto;
+  height: auto;
+}
+/* SIGN IN FORM */
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 2rem;
+}
+.forgotOrRemember {
+  display: flex;
+  justify-content: space-between;
+}
+#email {
+  margin-bottom: 2rem;
+}
+.signInBtn {
+  background-color: #4f46e5;
+  width: 100%;
+  height: 5rem;
+  color: #cbd5e1;
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+}
+.footerTextQestionMark {
+  text-align: center;
+}
+.createAccountDivSignInPage {
+  padding-left: 4rem;
+}
+/* END OF --> Sign In Pannle */
