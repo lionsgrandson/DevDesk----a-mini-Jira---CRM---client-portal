@@ -4,14 +4,22 @@ function loginPage() {
     <section className='loginPage'>
       <section className='sidePannle'>
         <h1 className='devDeskHeader'>DevDesk</h1>
-        <h2>Run client work without the tool sprawl.</h2>
-        <p>
-          Projects, clients, tasks, messages and invoices — one focused
-          workspace for your agency.
-        </p>
-        <section className='blueQuote'>
-          <p>“DevDesk gives our delivery team one clear source of truth.”</p>
-          <p>Moshe Schwartzberg - Admin</p>
+        <section className='mainLeftSideSection'>
+          <div>
+            <h2 className='runClientText'>
+              Run client work without the tool sprawl.
+            </h2>
+            <p className='subheaderSmallText'>
+              Projects, clients, tasks, messages and invoices — one focused
+              workspace for your agency.
+            </p>
+          </div>
+          <section className='blueQuote'>
+            <backquote>
+              “DevDesk gives our delivery team one clear source of truth.”
+            </backquote>
+            <p>Moshe Schwartzberg - Admin</p>
+          </section>
         </section>
       </section>
 

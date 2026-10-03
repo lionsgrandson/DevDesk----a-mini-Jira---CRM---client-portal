@@ -1,12 +1,43 @@
 .loginPage {
   display: flex;
 }
+/* LEFT SIDE PANNLE */
 .sidePannle {
   background-color: #111827;
-  width: 40%;
+  width: 35%;
   height: 100vh;
   color: white;
 }
-.devDeskHeader {
-  font-size: 24px;
+.mainLeftSideSection {
+  margin: 10rem 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
 }
+.devDeskHeader {
+  font-size: 2.4rem;
+  margin: 5rem 0 15rem 5rem;
+}
+.runClientText {
+  font-size: 4.65rem;
+  margin-bottom: 2rem;
+}
+.subheaderSmallText {
+  width: 90%;
+  font-size: 1.5rem;
+  color: #cbd5e1;
+}
+.blueQuote {
+  background-color: #3732a1;
+  text-align: left;
+  padding: 3rem;
+}
+.blueQuote backquote {
+  font-size: 1.95rem;
+  font-weight: 700;
+}
+.blueQuote p {
+  font-size: 1.28rem;
+  margin-top: 2rem;
+}
+/* END OF --> LEFT SIDE PANNLE */
